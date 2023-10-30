@@ -5,7 +5,7 @@ export async function deleteTodoBackend(todoId) {
     try {
         const config = {
             method: 'delete',
-            url: `http://localhost:8080/deleteTodo/${todoId}`
+            url: `http://localhost:8000/deleteTodo/${todoId}`
         }
         const res = await axios(config);
         showNotification(res.data.message,'red');

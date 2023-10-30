@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently  \"cd backend-js && npm run dev\"  \"cd frontend && npm run dev\" \"cd backend && .\\Scripts\\activate && uvicorn main:app --reload\" "
+    "dev": "concurrently  \"cd frontend && npm run dev\" \"cd backend && .\\Scripts\\activate && uvicorn main:app --reload\" "
   },
   "author": "",
   "license": "ISC",

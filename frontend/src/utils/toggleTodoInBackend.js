@@ -5,7 +5,8 @@ export async function toggleTodoDoneBackend(todoId) {
     try {
         const config = {
             method: 'put',
-            url: `http://localhost:8080/toggleTodo/${todoId}`
+            url: `http://localhost:8000/toggleTodo/${todoId}`
+            
         };
         const res = await axios(config);
         showNotification(res.data.message,'red');

@@ -50,7 +50,7 @@ app.get("/health-check",(req,res) => {
 
 app.get("/todos",async(req,res) => {
     try {
-        const todos = await Todo.find({});
+        
         res.status(200).send({"todos": todos,
                               "message": "fetched todos!"
     

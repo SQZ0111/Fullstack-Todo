@@ -4,7 +4,7 @@ export async function addTodoBackend(newTodo) {
     try {
         const config = {
             method: 'post',
-            url: 'http://localhost:8080/addTodo',
+            url: 'http://localhost:8000/postTodo',
             headers: {
                 'Content-Type': 'application/json'
             },
