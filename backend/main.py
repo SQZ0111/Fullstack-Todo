@@ -11,8 +11,9 @@ from fastapi.middleware.cors import CORSMiddleware
 #load env variables
 load_dotenv()
 
-# from userModel import User
-from userModel import Todo,TodoResponse
+#import validation models
+from models.todoModel import Todo
+from models.responseModel import TodoResponse
 
 
 # initialise app

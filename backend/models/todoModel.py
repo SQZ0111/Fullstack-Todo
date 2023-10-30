@@ -7,6 +7,3 @@ class Todo(BaseModel):
     category: str
     id: str
     done: bool
-
-class TodoResponse(BaseModel):
-    message: str
